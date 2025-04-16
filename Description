@@ -1,0 +1,38 @@
+Cat vs Dog Classifier using Logistic Regression
+Introduction:
+This project aims to classify images of cats and dogs using a Logistic Regression model. The model is trained on a dataset of 6500 images each of cats and dogs, where pixel values serve as input features to predict whether an image contains a cat or a dog.
+
+📁 Dataset Source: Microsoft Cats vs Dogs Dataset on Kaggle(https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset)
+
+Model Preparation:
+Dataset: The dataset consists of 6500 images of cats and 6500 images of dogs, resized to 64x64 pixels for consistent input.
+
+Data Preprocessing: Images were converted into numerical arrays, flattened, and split into training and testing sets (80% training, 20% testing).
+
+Training the Model: A Logistic Regression model was trained using Scikit-learn.
+
+Model Evaluation: The trained model was evaluated on the test set.
+
+Performance Metrics:
+Accuracy: 51.80%
+
+Classification Report:
+
+               precision    recall  f1-score   support
+
+         Cat       0.51      0.53      0.52      1223
+         Dog       0.52      0.51      0.51      1244
+
+    accuracy                           0.52      2467
+   macro avg       0.52      0.52      0.52      2467
+weighted avg       0.52      0.52      0.52      2467
+Key Insights:
+The model performs almost equally for both classes with precision and recall values around 0.51–0.53.
+
+The F1-score of 0.52 indicates balanced, though modest, classification ability.
+
+Conclusion:
+This basic Logistic Regression model demonstrates that while simple models can learn from image data, their performance is limited. Future improvements may include:
+  * Using Convolutional Neural Networks (CNNs)
+  * Applying data augmentation
+  * Trying transfer learning with pre-trained models
